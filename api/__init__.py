@@ -11,6 +11,7 @@ from apispec.ext.marshmallow import MarshmallowPlugin
 from flask_apispec.extension import FlaskApiSpec
 from flask_babel import Babel
 from flask_mail import Mail, Message
+from flasgger import Swagger
 
 app = Flask(__name__, static_folder=Config.UPLOAD_FOLDER)
 app.config.from_object(Config)

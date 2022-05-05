@@ -18,22 +18,18 @@ api.add_resource(UsersSearchResource,
                  '/users/search')  # GET
 api.add_resource(UserResource,
                  '/users/<int:user_id>')  # GET, PUT, DELETE
-
 api.add_resource(TokenResource,
                  '/auth/token')  # GET
-
 api.add_resource(note.NotesListResource,
                  '/notes',  # GET, POST
                  )
 api.add_resource(note.NoteResource,
                  '/notes/<int:note_id>',  # GET, PUT, DELETE
                  )
-
 api.add_resource(TagsListResource,
                  '/tags')  # GET, POST
 api.add_resource(TagsResource,
                  '/tags/<int:tag_id>')  # GET, PUT, DELETE
-
 api.add_resource(note.NoteSetTagsResource,
                  '/notes/<int:note_id>/add_tags')  # PUT
 api.add_resource(note.NoteFilerResource,

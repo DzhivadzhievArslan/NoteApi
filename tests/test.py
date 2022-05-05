@@ -233,8 +233,6 @@ class TestNotes(TestCase):
         """
         pass
 
-
-
     def test_private_public_notes(self):
         """
         Проверка создания/получения публичных/приватных заметок
